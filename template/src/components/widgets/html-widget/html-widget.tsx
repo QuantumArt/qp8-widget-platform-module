@@ -1,4 +1,4 @@
-import { useZoneStore } from '@qp8-widget-platform/bridge';
+import { useZoneStore } from '@quantumart/qp8-widget-platform-bridge';
 import React from 'react';
 import { collapseProps } from 'src/utilities/collapse-props';
 

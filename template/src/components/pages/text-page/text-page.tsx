@@ -1,5 +1,5 @@
 import React from 'react';
-import { WidgetZone, useZoneStore } from '@qp8-widget-platform/bridge';
+import { WidgetZone, useZoneStore } from '@quantumart/qp8-widget-platform-bridge';
 import { collapseProps } from 'src/utilities/collapse-props';
 
 interface IProps {

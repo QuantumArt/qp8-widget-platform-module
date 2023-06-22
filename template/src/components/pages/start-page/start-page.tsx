@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAbstractItem } from '@qp8-widget-platform/bridge';
+import { useAbstractItem } from '@quantumart/qp8-widget-platform-bridge';
 import { Navigate } from 'react-router-dom';
 
 const StartPage = () => {

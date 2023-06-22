@@ -1,24 +1,21 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
     "sourceMap": true,
-    "strict": true,
+    "target": "es2015",
+    "module": "esnext",
+    "importHelpers": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "noImplicitThis": true,
-    "noImplicitReturns": true,
-    "target": "es2015",
-    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
-    "baseUrl": ".",
+    "rootDirs": ["src"],
+    "outDir": "dist",
     "paths": {
-        "src/*": ["src/*"],
-        "@assets/*": ["src/client/assets/images/*"],
-        "*": ["./@mf-types/*"]
+      "src/*": ["./src/*"]
     }
   },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["src"],
+  "exclude": ["node_modules", "template", "dist"]
 }
