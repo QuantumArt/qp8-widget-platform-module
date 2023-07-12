@@ -4,7 +4,6 @@ import { collapseProps } from 'src/utilities/collapse-props';
 
 interface IProps {
   text?: string;
-  hidetitle: boolean;
 }
 
 const TextPage = (propsOrg: IProps): JSX.Element => {

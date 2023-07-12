@@ -17,5 +17,5 @@ fs.renameSync(path.join(projectDir, 'gitignore'), path.join(projectDir, '.gitign
 
 spawn.sync('npm', ['install'], { cwd: `${projectDir}`, stdio: 'inherit' });
 
-console.log('Success! Shell project QP8.WidgetPlatform is ready.');
+console.log('Success! Module project QP8.WidgetPlatform is ready.');
 console.log(`Created ${projectName} at ${projectDir}`);
