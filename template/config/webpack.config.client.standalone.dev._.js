@@ -5,8 +5,8 @@ const { merge } = require('webpack-merge');
 /**
  * @type {import('webpack').Configuration}
  **/
-const webpackConfig = {
-  devtool: 'source-map',
+const webpackConfig = env => ({
+  devtool: 'eval',
   devServer: {
     static: {
       directory: path.join(__dirname, '../dist'),
@@ -18,7 +18,8 @@ const webpackConfig = {
     },
     port: 3201,
     historyApiFallback: true,
+    hot: false,
   },
-};
+});
 
-module.exports = merge(baseconfig, webpackConfig);
+module.exports = env => merge(baseconfig(env), webpackConfig(env));

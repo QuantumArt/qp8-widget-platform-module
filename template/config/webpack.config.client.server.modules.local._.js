@@ -1,9 +1,12 @@
-const baseconfig = require('./webpack.config.client.standalone._');
+const path = require('path');
+const baseconfig = require('./webpack.config.client.server.modules._');
 const { merge } = require('webpack-merge');
 
 /**
  * @type {import('webpack').Configuration}
  **/
-const webpackConfig = env => ({});
+const webpackConfig = env => ({
+  devtool: 'eval',
+});
 
 module.exports = env => merge(baseconfig(env), webpackConfig(env));

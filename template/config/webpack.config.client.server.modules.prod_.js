@@ -1,5 +1,5 @@
 const path = require('path');
-const baseconfig = require('./webpack.config.client._');
+const baseconfig = require('./webpack.config.client.server.modules._');
 const { merge } = require('webpack-merge');
 
 /**

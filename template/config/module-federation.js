@@ -33,7 +33,7 @@ const shared = {
   },
 };
 
-module.exports = {
+module.exports = env => ({
   client: new ModuleFederationPlugin({
     name: 'qp_widgets_platform_modules',
     filename: 'remoteEntry.js',
@@ -56,4 +56,4 @@ module.exports = {
       remotes: remotes,
     }),
   ],
-};
+});
