@@ -67,6 +67,13 @@ const webpackConfig = env => ({
         test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
       },
+      {
+        test: /settings.json$/,
+        type: 'asset/resource',
+        generator: {
+          filename: './[name][ext]',
+        },
+      },
     ],
   },
   plugins: [new TsCheckerWebpackPlugin()],

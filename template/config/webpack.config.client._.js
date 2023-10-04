@@ -16,6 +16,11 @@ const webpackConfig = env => ({
     filename: 'main.[contenthash].js',
   },
   plugins: [moduleFederationPlugin(env).client],
+  resolve: {
+    fallback: {
+      path: false,
+    },
+  },
 });
 
 module.exports = env => merge(baseconfig(env), webpackConfig(env));

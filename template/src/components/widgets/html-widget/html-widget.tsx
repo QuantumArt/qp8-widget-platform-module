@@ -3,7 +3,9 @@ import React from 'react';
 import { collapseProps } from 'src/utilities/collapse-props';
 
 interface IProps {
-  html?: string;
+  html?: {
+    value: string;
+  };
 }
 
 const HtmlWidget = (propsOrg: IProps): JSX.Element => {

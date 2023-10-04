@@ -1,9 +1,12 @@
-export function collapseProps<T>(source: T): T {
-  const anySource = source as any;
-  return Object.keys(anySource).reduce((acc, key) => {
+export type ComponentProps<T extends { [key: string]: any }> = {
+  [Prop in keyof T]: NonNullable<T[Prop]>['value'];
+};
+
+export function collapseProps<T extends { [key: string]: any }>(source: T): ComponentProps<T> {
+  return Object.keys(source).reduce((acc, key) => {
     return {
       ...acc,
-      [key]: anySource[key]?.value,
+      [key]: source[key]?.value,
     };
-  }, {} as T);
+  }, {} as ComponentProps<T>);
 }
