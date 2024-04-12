@@ -12,6 +12,11 @@ const webpackConfig = env => ({
       assets: path.resolve(__dirname, '../src/client/assets/'),
     },
   },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 1024000,
+    maxAssetSize: 1024000
+  },
   module: {
     rules: [
       {

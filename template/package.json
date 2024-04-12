@@ -1,6 +1,6 @@
 {
   "name": "@quantumart/qp8-widget-platform-module",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "Данный проект является частью системы QP8.WidgetPlatform и содержит в себе шаблон для построения модулей, содержащих один или более компонентов (страниц и виджетов)",
   "author": "Quantum Art (http://quantumart.ru/) Alferov Vitalii",
   "license": "Apache License Version 2.0",
@@ -53,7 +53,7 @@
     "serve": "serve dist --cors -p 3201"
   },
   "dependencies": {
-    "@quantumart/qp8-widget-platform-bridge": "^8.0.10",
+    "@quantumart/qp8-widget-platform-bridge": "^8.0.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "^6.10.0",
